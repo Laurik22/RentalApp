@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
-import EquipmentList from './pages/EquipmentList'
-import Contact from './pages/Contact';
+import ProductDetail from './pages/ProductDetail';
+
 
 function App() {
 
@@ -14,8 +14,7 @@ function App() {
     <Header />
     <Routes>
       <Route path="/" element={<Home/>} />      
-      <Route path="/equipmentList" element={<EquipmentList/>} />   
-      <Route path="/contact" element={<Contact/>} />
+      <Route path="/products/:productId" element={<ProductDetail />} />  
     </Routes>
   </Router>
   );

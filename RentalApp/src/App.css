@@ -7,14 +7,3 @@
 .content{
    margin-top: 60px;
   }
-  .customNav{
-    background-color: rgb(47, 43, 43);
-  }
-  .customNav .nav-link {
-    color: white;
-  }
-  .customNav .nav-link:hover {
-    color: #bebeba; 
-  }
-
-
