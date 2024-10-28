@@ -24,7 +24,7 @@ return(
             <Dropdown.Item as={Link} to="/products/agrikaatti">Agrikaatti</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown> 
-        <Nav.Link as={Link} to="/" >Varaus Kalenteri</Nav.Link> 
+        <Nav.Link as={Link} to="/reservations" >Varaus Kalenteri</Nav.Link> 
       </Nav>
     </Navbar.Collapse>
   </Container>
