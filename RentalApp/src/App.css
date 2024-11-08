@@ -1,11 +1,17 @@
 #root {
-  margin: 0 auto;
-  padding: 2rem;
+  margin: auto;
+  padding: 6rem;
   text-align: center;
 }
 .content{
-   margin-top: 60px;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+  /*
+  kalenteri
+  */
   .rbc-header{
     color: white;
     background: #17405d;
@@ -14,8 +20,7 @@
     align-items: center;
     justify-content: center;
     height: 36px;
-
-  }
+    }
   .rbc-event, 
   .rbc-background-event{
     padding: 0px;
@@ -24,4 +29,6 @@
   .rbc-time-header-cell .rbc-today{
     background-color: #04aa6d;
   }
+  
+
    

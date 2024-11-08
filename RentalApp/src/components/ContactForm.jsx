@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { InputGroup, Col, Button, Row, Container, Card, Form } from 'react-bootstrap'
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -27,56 +28,83 @@ function ContactForm() {
     };
   
     return (
-        <form onSubmit={handleSubmit}>
-        <h2>Ota yhteyttä </h2>
+      <Container>
+      <Row className="justify-content-center align-items-center">
+        <Col md={10} lg={8} xs={12}>
+          <Form onSubmit={handleSubmit} className="p-4 border rounded">
+            <h2 className="mb-4">Ota yhteyttä</h2>
+            <Row className="mb-3">
+              <Form.Group as={Col} controlId="formName">
+                <Form.Control
+                  type="text"
+                  name="name"
+                  placeholder="Nimi *"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Row>
 
-        <br />
-        <label>nimi:</label>
-        <input
-          type="text"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <br />
-        <label>Sähköposti:</label>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <br />
-        <label>Puhelinnumero:</label>
-        <input
-          type="tel"
-          name="phone"
-          value={formData.phone}
-          onChange={handleChange}
-        />
-        <br />
-        <label>Aihe:</label>
-        <input
-          type="text"
-          name="subject"
-          value={formData.subject}
-          onChange={handleChange}
-          required
-        />
-        <br />
-        <label>Viesti:</label>
-        <textarea
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-        <br />
-        
-        <button type="submit">Lähetä</button>
-      </form>
+            <Row className="mb-3">
+              <Form.Group as={Col} controlId="formEmail">
+                <Form.Control
+                  type="email"
+                  name="email"
+                  placeholder="Sähköposti *"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Row>
+
+            <Row className="mb-3">
+              <Form.Group as={Col} md={6} controlId="formPhone">
+                <Form.Control
+                  type="tel"
+                  name="phone"
+                  placeholder="Puhelinnumero"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+
+              <Form.Group as={Col} md={6} controlId="formSubject">
+                <Form.Control
+                  type="text"
+                  name="subject"
+                  placeholder="Aihe *"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Row>
+
+            <Row className="mb-3">
+              <Form.Group as={Col} controlId="formMessage">
+                <Form.Control
+                  as="textarea"
+                  rows={5}
+                  name="message"
+                  placeholder="Viesti *"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                />
+              </Form.Group>
+            </Row>
+
+            <div className="d-grid">
+              <Button variant="primary" type="submit">
+                Lähetä
+              </Button>
+            </div>
+          </Form>
+        </Col>
+      </Row>
+    </Container>
     );
   }
   

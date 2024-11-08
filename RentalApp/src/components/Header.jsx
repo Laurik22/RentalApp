@@ -8,7 +8,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 function Header(){
 return(
-  <Navbar className="bg-body-tertiary" expand="lg" fixed="top">
+  <Navbar className="bg-body-tertiary" expand="lg" fixed="top" >
   <Container>
     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <Navbar.Collapse id="basic-navbar-nav">
@@ -16,7 +16,7 @@ return(
         <Nav.Link as={Link} to="/" >Etusivu</Nav.Link> 
         <Dropdown>
           <Dropdown.Toggle variant='light' id="dropdown-basic">
-            Vuokrattava Kalusto
+            Vuokrattava kalusto
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <Dropdown.Item as={Link} to="/products/saunaTrailer">Saunakärry</Dropdown.Item>
@@ -24,7 +24,7 @@ return(
             <Dropdown.Item as={Link} to="/products/agrikaatti">Agrikaatti</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown> 
-        <Nav.Link as={Link} to="/reservations" >Varaus Kalenteri</Nav.Link> 
+        <Nav.Link as={Link} to="/reservations" >Varauskalenteri</Nav.Link> 
       </Nav>
     </Navbar.Collapse>
   </Container>
