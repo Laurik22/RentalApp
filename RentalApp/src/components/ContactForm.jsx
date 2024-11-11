@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { InputGroup, Col, Button, Row, Container, Card, Form } from 'react-bootstrap'
+import {Col, Button, Row, Container, Card, Form } from 'react-bootstrap'
 
 function ContactForm() {
     const [formData, setFormData] = useState({
@@ -29,8 +29,8 @@ function ContactForm() {
   
     return (
       <Container>
-      <Row className="justify-content-center align-items-center">
-        <Col md={10} lg={8} xs={12}>
+      <Row className="justify-content-center align-items-center" >
+        <Col md={10} lg={'auto'} xs={12}>
           <Form onSubmit={handleSubmit} className="p-4 border rounded">
             <h2 className="mb-4">Ota yhteyttä</h2>
             <Row className="mb-3">
