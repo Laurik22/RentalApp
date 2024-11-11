@@ -1,4 +1,6 @@
 import Sivukuva from './assets/Sivukuva.jpg';
+import Sisakuva from './assets/Sisakuva.jpg';
+import ulko from './assets/ulko.jpg';
 
 export const products = [
   { 
@@ -6,7 +8,11 @@ export const products = [
     name: 'Saunakärry', 
     description: 'Kuvaus Saunakärrystä', 
     price: 100,
-    img: Sivukuva 
+    images: [
+      Sivukuva,
+      Sisakuva,
+      ulko
+     ]
   },
   { 
     id: 'perakarry', 
