@@ -97,7 +97,7 @@ function ContactForm() {
             </Row>
 
             <div className="d-grid">
-              <Button variant="primary" type="submit">
+              <Button type="submit" style={{background: "linear-gradient(to left, #c2a482, #5e3e2e)",border:'none'}} >
                 Lähetä
               </Button>
             </div>
