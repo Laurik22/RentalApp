@@ -28,9 +28,9 @@ function ContactForm() {
     };
   
     return (
-      <Container>
+      <Container fluid ="sm">
       <Row className="justify-content-center align-items-center" >
-        <Col md={10} lg={'auto'} xs={12}>
+        <Col xs={12} sm={10} md={8} lg={10}>
           <Form onSubmit={handleSubmit} className="p-4 border rounded">
             <h2 className="mb-4">Ota yhteyttä</h2>
             <Row className="mb-3">

@@ -3,32 +3,27 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import Dropdown from 'react-bootstrap/Dropdown';
-
+import '../App.css'
+import { NavDropdown } from 'react-bootstrap';
 
 function Header(){
 return(
-  <Navbar className="bg-body-tertiary" expand="lg" fixed="top" >
-  <Container>
+  <Navbar  expand="lg" fixed="top" style={{background: "linear-gradient(to right, #b2fefa, #0ed2f7)", display: 'flex', justifyContent: 'center'}}>
+     <Container>
     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mx-auto">
-        <Nav.Link as={Link} to="/" >Etusivu</Nav.Link> 
-        <Dropdown>
-          <Dropdown.Toggle variant='light' id="dropdown-basic">
-            Vuokrattava kalusto
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <Dropdown.Item as={Link} to="/products/saunaTrailer">Saunakärry</Dropdown.Item>
-            <Dropdown.Item as={Link} to="/products/perakarry">Peräkärry</Dropdown.Item>
-            <Dropdown.Item as={Link} to="/products/agrikaatti">Agrikaatti</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown> 
-        <Nav.Link as={Link} to="/reservations" >Varauskalenteri</Nav.Link> 
+      <Nav className='me-auto'>
+        <Nav.Link as={Link} to="/home" >Etusivu</Nav.Link> 
+        <NavDropdown title='Vuokrattava kalusto' id="basic-nav-dropdown" >
+            <NavDropdown.Item as={Link} to="/products/saunaTrailer">Saunakärry</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/products/perakarry">Peräkärry</NavDropdown.Item>
+        </NavDropdown> 
+        <Nav.Link as={Link} to="/reservations">Varauskalenteri</Nav.Link> 
       </Nav>
     </Navbar.Collapse>
-  </Container>
+    </Container>
 </Navbar>
+
 );
 }
 export default Header;
