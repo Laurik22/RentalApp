@@ -18,8 +18,8 @@ export const products = [
     ),
     priceInformation: (
         <div>
-          <p>-Viikonloppu pe-su/3vrk: 230 € (sis. alv 24%)</p>
-          <p>-Vuorokausi 140 eur (sis. alv 24%)</p>
+          <p>-Viikonloppu pe-su/3vrk: 230 € (sis. alv 25.5%)</p>
+          <p>-Vuorokausi 140 eur (sis. alv 25.5%)</p>
           <p>-Muut ajankohdat: sovitaan erikseen.</p>
           <p>-Lisätietoja: Ota yhteyttä yhteydenotto lomakkeella tai soita  040-7143451</p>
         </div>

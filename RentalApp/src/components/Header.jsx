@@ -12,7 +12,7 @@ return(
      <Container>
     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className='me-auto'>
+      <Nav className='mx-auto'>
         <Nav.Link as={Link} to="/home" >Etusivu</Nav.Link> 
         <NavDropdown title='Vuokrattava kalusto' id="basic-nav-dropdown" >
             <NavDropdown.Item as={Link} to="/products/saunaTrailer">Saunakärry</NavDropdown.Item>

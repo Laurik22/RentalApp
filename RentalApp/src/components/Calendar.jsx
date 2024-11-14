@@ -73,7 +73,7 @@ const GoogleCalendar = () => {
         month: "Kuukausi",
         week: 'Viikko',
     };
-
+    
     return (
         <div>
             <h2>Varauskalenteri</h2>
