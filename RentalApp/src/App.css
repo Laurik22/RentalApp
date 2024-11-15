@@ -1,6 +1,8 @@
 #root {
   margin: auto;
   padding-top: 5em;
+  padding-left: 2em;
+  padding-right: 2em;
   text-align: center;
 }
 .navbar .navbar-nav .nav-link {

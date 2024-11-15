@@ -1,11 +1,12 @@
 import Sivukuva from './assets/Sivukuva.jpg';
 import Sisakuva from './assets/Sisakuva.jpg';
 import ulko from './assets/ulko.jpg';
-
+import trailer1 from './assets/trailer1.jpg';
+import trailer2 from './assets/trailer2.jpg';
 export const products = [
   { 
     id: 'saunaTrailer', 
-    name: 'Sauna peräkärry ', 
+    name: 'Sauna', 
     description: (
       <div>
         <p>-Saunaan mahtuu 4-6 henkilöä</p>
@@ -33,11 +34,29 @@ export const products = [
   { 
     id: 'perakarry', 
     name: 'Peräkärry', 
-    description: 'Kuvaus Peräkärrystä', 
-    price: 50,
+    description: (
+      <div>
+        -avattavat ja helposti irrotettavat etu- ja takalaita <br />
+        -etu ja takalaidassa hitsattu runkorakenne <br />
+        -nokkapyörä
+        <p>-metalliset step-on-lokasuojat</p>
+        <p>-astinlaudat molemmin puolin lokasuojia</p>
+        <p>-laminoitu vesitiivis vanerilattia</p>
+        <p>-kippi</p>
+        <p>-LED etu- ja äärivalot</p>
+      </div>
+    ), 
+    priceInformation:(
+      <div>
+        <p><strong>Hinnasto</strong></p>
+        <p>-20€ / Vrk</p>
+        <p>-35€ / 2 Vrk </p>
+      </div>
+    ),
     images:[
-
+        trailer1,
+        trailer2
+        
     ]
-
   },
 ];

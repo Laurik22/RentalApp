@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import {Col, Button, Row, Container, Card, Form } from 'react-bootstrap'
+import {Col, Button, Row, Container, Form } from 'react-bootstrap'
 
 function ContactForm() {
     const [formData, setFormData] = useState({

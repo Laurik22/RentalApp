@@ -11,7 +11,7 @@ function App() {
     <Router>
     <Header />
     <Routes>
-      <Route path="/" element={<Navigate to="/products/:saunaTrailer"/>} />      
+      <Route path='/'element={<Navigate to="/products/saunaTrailer"/>} />   
       <Route path="/products/:productId" element={<ProductDetail />} />  
       <Route path="/reservations" element={<Reservations />} />  
     </Routes>

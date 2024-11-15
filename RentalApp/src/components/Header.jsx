@@ -12,7 +12,8 @@ return(
      <Container>
     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className='mx-auto'> 
+      <Nav className='mx-auto'>
+
         <NavDropdown  title='Vuokrattava kalusto' id="basic-nav-dropdown" >
             <NavDropdown.Item as={Link} to="/products/saunaTrailer">Saunakärry</NavDropdown.Item >
             <NavDropdown.Item as={Link} to="/products/perakarry">Peräkärry</NavDropdown.Item>
