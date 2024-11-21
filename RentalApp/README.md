@@ -1,8 +1,14 @@
-# React + Vite
+# RentalApp
+Project: 
+It is sauna trailer and car trailer rental page. You can contact the owner by contact form and your message is sent to owners email with emailjs api. Owner can also mark reserved days to google calendar and they show on the page throw google calendar api. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://calendar.google.com/calendar/embed?src=f1205b7657fe9a4a469c544171e513b42f803bb74da50b545925112c6a34b9eb%40group.calendar.google.com&ctz=Europe%2FHelsinki
 
-Currently, two official plugins are available:
+Used apis:
+-Google Calendar Api
+- Emailjs
+-Moments 
+-Axios
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+For styling:
+-Bootstrap

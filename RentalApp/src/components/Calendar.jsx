@@ -30,23 +30,23 @@ const GoogleCalendar = () => {
                     }
                 });
 
-                // Suodatetaan tapahtumat niin, että vain yksi tapahtuma per päivä sallitaan
+               
                 const eventsByDay = {};
 
                 response.data.items.forEach(event => {
-                    const isAllDayEvent = !event.start.dateTime; // Tarkistetaan, onko koko päivän tapahtuma
+                    const isAllDayEvent = !event.start.dateTime; 
                     const eventDate = new Date(event.start.dateTime || event.start.date).toDateString();
 
-                    // Lisää tapahtuma vain, jos päivälle ei ole jo tapahtumaa
+                   
                     if (!eventsByDay[eventDate]) {
                         eventsByDay[eventDate] = {
                             id: event.id,
                             title: event.summary,
                             start: isAllDayEvent
-                                ? new Date(event.start.date) // Jos on koko päivän tapahtuma, käytetään vain päivämäärää
+                                ? new Date(event.start.date) 
                                 : new Date(event.start.dateTime),
                             end: isAllDayEvent
-                                ? new Date(event.start.date) // Sama loppupäivämäärä koko päivän tapahtumille
+                                ? new Date(event.start.date)
                                 : new Date(event.end.dateTime || event.end.date),
                             allDay: isAllDayEvent
                         };
