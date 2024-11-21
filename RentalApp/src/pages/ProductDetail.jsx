@@ -5,6 +5,9 @@ import ContactForm from '../components/ContactForm';
 import Carousel from 'react-bootstrap/Carousel';
 import { Card, Container, Row, Col, CardBody, Image } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+import MyGallery from "../components/MyGallery";
 
 function ProductDetail() {
   const { productId } = useParams();
@@ -30,41 +33,12 @@ function ProductDetail() {
       <Row>
         <Col className='mb-5'>
           <h1>{product.name}</h1>
-          <Carousel slide={false} interval={null} variant='dark'>
-            {images.map((img, index) => (
-              <Carousel.Item key={index}>
-                <Image
-                  rounded
-                  className=""
-                  src={img}
-                  style={{
-                    marginTop: '2em',
-                    maxHeight: '600px',
-                    objectFit: 'contain',
-                    width: '100%',
-                    backgroundColor: '#d5d5d5'
-                  }}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
+          <MyGallery/>
         </Col>
       </Row>
       <Row className="justify-content-center">
-        {isTrailer ? (
-          <Col md={10} className="d-flex">
-            <Card className='mb-5 w-100'>
-              <CardBody style={{ textAlign: 'start' }}>
-                <Card.Title>Ominaisuudet</Card.Title>
-                {product.description}
-                {product.priceInformation}
-              </CardBody>
-            </Card>
-          </Col>
-        ) : (
-          <>
-            <Col md={5} className='d-flex'>
-              <Card className='mb-5 w-100'>
+       <Col md={5} className='d-flex'>
+         <Card className='mb-5 w-100'>
                 <CardBody style={{ textAlign: 'start' }}>
                   <Card.Title>Ominaisuudet</Card.Title>
                   {product.description}
@@ -77,10 +51,8 @@ function ProductDetail() {
                   <Card.Title>Hinnasto</Card.Title>
                   {product.priceInformation}
                 </CardBody>
-              </Card>
-            </Col>
-          </>
-        )}
+              </Card>     
+            </Col>     
       </Row>
 
       <Row className='mb-5'>
@@ -88,6 +60,7 @@ function ProductDetail() {
           <ContactForm />
         </Col>
       </Row>
+
     </Container>
   );
 }
