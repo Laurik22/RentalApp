@@ -3,28 +3,36 @@ import Sisakuva from './assets/Sisakuva.jpg';
 import ulko from './assets/ulko.jpg';
 import trailer1 from './assets/trailer1.jpg';
 import trailer2 from './assets/trailer2.jpg';
+import './App.css'
+import { CardTitle } from 'react-bootstrap';
+
+
 export const products = [
   { 
     id: 'saunaTrailer', 
-    name: 'Sauna', 
+    name: 'Saunakärry',
     description: (
       <div>
-        <p>-Saunaan mahtuu 4-6 henkilöä</p>
-        <p>-Lämpiää kuivilla puilla noin 20 minuutissa</p>
-        <p>-Vesipata veden lämmitykseen</p>
-        <p>-Luovutetaan aina pestynä ja desinfioituna</p>
-        <p>-Saa vetää B-ajokortilla</p>
-
+        <h4>Ominaisuudet</h4>
+        <p></p>
+        <p><li>Saunaan mahtuu 4-6 henkilöä</li></p>
+        <p><li>Lämpiää kuivilla puilla noin 20 minuutissa</li></p>
+        <p><li>Vesipata veden lämmitykseen</li></p>
+        <p><li>Luovutetaan aina pestynä ja desinfioituna </li></p>
+        <p><li>Saa vetää B-ajokortilla</li></p>
       </div>
     ),
     priceInformation: (
         <div>
-          <p>-Viikonloppu pe-su/3vrk: 230 € (sis. alv 25.5%)</p>
-          <p>-Vuorokausi 140 eur (sis. alv 25.5%)</p>
-          <p>-Muut ajankohdat: sovitaan erikseen.</p>
-          <p>-Lisätietoja: Ota yhteyttä yhteydenotto lomakkeella tai soita  040-7143451</p>
+          <h4>Hinnasto</h4>
+          <p></p>
+          <p><li>Viikonloppu pe-su/3vrk: 230 € (sis. alv 25.5%)</li></p>
+          <p><li>Vuorokausi 140 € (sis. alv 25.5%)</li></p>
+          <p><li>Muut ajankohdat: sovitaan erikseen.</li></p>
+          <p><li>Lisätietoja: Ota yhteyttä yhteydenotto lomakkeella tai soita  040-7143451.</li></p>
         </div>
     ),
+
     images: [
       Sivukuva,
       Sisakuva,
@@ -56,7 +64,6 @@ export const products = [
     images:[
         trailer1,
         trailer2
-        
     ]
   },
 ];

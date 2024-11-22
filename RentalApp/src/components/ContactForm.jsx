@@ -28,10 +28,10 @@ function ContactForm() {
     };
   
     return (
-      <Container fluid ="sm">
-      <Row className="justify-content-center align-items-center" >
-        <Col xs={12} sm={10} md={8} lg={10}>
-          <Form onSubmit={handleSubmit} className="p-4 border rounded">
+      <Container>
+      <Row className="justify-content-center align-items-center">
+        <Col md={8} lg={8}>
+          <Form onSubmit={handleSubmit} className="p-4 border rounded shadow">
             <h2 className="mb-4">Ota yhteyttä</h2>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formName">
@@ -97,7 +97,7 @@ function ContactForm() {
             </Row>
 
             <div className="d-grid">
-              <Button type="submit" style={{background: "linear-gradient(to left, #c2a482, #5e3e2e)",border:'none'}} >
+              <Button type="submit" variant='secondary'size='lg' >
                 Lähetä
               </Button>
             </div>

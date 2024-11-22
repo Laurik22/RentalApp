@@ -8,17 +8,18 @@ import { NavDropdown } from 'react-bootstrap';
 
 function Header(){
 return(
-  <Navbar expand="lg" fixed="top" style={{background: "linear-gradient(to right, #c2a482, #5e3e2e)"}}>
+  <Navbar className='shadow' expand="md" fixed="top" bg='light'>
      <Container>
     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className='mx-auto'>
+      <Nav className='mx-auto' >
 
-        <NavDropdown  title='Vuokrattava kalusto' id="basic-nav-dropdown" >
+        <NavDropdown  title='Vuokrattava kalusto' id="basic-nav-dropdown" className='me-4' variant='light' >
             <NavDropdown.Item as={Link} to="/products/saunaTrailer">Saunakärry</NavDropdown.Item >
             <NavDropdown.Item as={Link} to="/products/perakarry">Peräkärry</NavDropdown.Item>
         </NavDropdown> 
-        <Nav.Link as={Link} to="/reservations">Varauskalenteri</Nav.Link> 
+        <Nav.Link as={Link} to="/reservations" className='me-4'>Varauskalenteri</Nav.Link> 
+        <Nav.Link className='me-4'>Vuokrausehdot </Nav.Link> 
       </Nav>
     </Navbar.Collapse>
     </Container>

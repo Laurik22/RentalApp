@@ -7,30 +7,52 @@
 }
 .navbar .navbar-nav .nav-link {
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  color: #000000;
 }
-.navbar .navbar-nav .nav-link:hover {
-color: #d5d5d5;
+.navbar .navbar-nav .dropdown-item {
+  color: #000000; /* Tekstin väri */
+  font-weight: 600; /* Sama fonttipaino kuin muissa linkeissä */
+  font-size: 1.2em; /* Varmistetaan yhtenäinen fonttikoko */
+}
+.navbar .navbar-nav .dropdown-menu {
+   /* Sama väri kuin Navbar */
+  border: none; /* Poistaa mahdolliset reunukset */
 }
 
+
+.navbar .navbar-nav .nav-link:hover {
+color: #000000;
+}
 .image-gallery {
   width: 100%;
   height: auto;
 }
+.image-gallery-image {
+  border-radius: 10px; 
+  overflow: hidden;  
+}
 
 .image-gallery-slide img {
+  border-radius: 10px; 
   width: 100%;
   height: 500px;
   max-height: 80vh;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
   object-position: center center;
-
+  border-color: #000000;
 }
 
 .fullscreen .image-gallery-slide img {
   height: 80vh;
   padding-top: 5em;
+  background-color: #000000;
+}
+
+.data-products-text{
+  font-size: large;
+  font-style: italics;
 }
 
 
