@@ -8,13 +8,13 @@ import { NavDropdown } from 'react-bootstrap';
 
 function Header(){
 return(
-  <Navbar className='shadow' expand="md" fixed="top" bg='light'>
+  <Navbar className='shadow' expand="md" fixed="top"  variant='light' style={{backgroundColor:'#C4A484'}}>
      <Container>
     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className='mx-auto' >
 
-        <NavDropdown  title='Vuokrattava kalusto' id="basic-nav-dropdown" className='me-4' variant='light' >
+        <NavDropdown  title='Vuokrattava kalusto' id="basic-nav-dropdown" className='me-4' >
             <NavDropdown.Item as={Link} to="/products/saunaTrailer">Saunakärry</NavDropdown.Item >
             <NavDropdown.Item as={Link} to="/products/perakarry">Peräkärry</NavDropdown.Item>
         </NavDropdown> 

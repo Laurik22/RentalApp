@@ -30,14 +30,14 @@ const GoogleCalendar = () => {
                     }
                 });
 
-               
+            
                 const eventsByDay = {};
 
                 response.data.items.forEach(event => {
                     const isAllDayEvent = !event.start.dateTime; 
                     const eventDate = new Date(event.start.dateTime || event.start.date).toDateString();
 
-                   
+                    
                     if (!eventsByDay[eventDate]) {
                         eventsByDay[eventDate] = {
                             id: event.id,
@@ -46,7 +46,7 @@ const GoogleCalendar = () => {
                                 ? new Date(event.start.date) 
                                 : new Date(event.start.dateTime),
                             end: isAllDayEvent
-                                ? new Date(event.start.date)
+                                ? new Date(event.start.date) 
                                 : new Date(event.end.dateTime || event.end.date),
                             allDay: isAllDayEvent
                         };
@@ -76,7 +76,7 @@ const GoogleCalendar = () => {
     
     return (
         <div>
-            <h2>Varauskalenteri</h2>
+            <h1>Varauskalenteri</h1>
             <Calendar
                 localizer={localizer}
                 culture='fi-FI'

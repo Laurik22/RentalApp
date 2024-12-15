@@ -6,6 +6,7 @@ import { Card, Container, Row, Col, CardBody} from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import "react-image-gallery/styles/css/image-gallery.css";
 import MyGallery from "../components/MyGallery";
+import Calendar2 from "../components/Calendar2";
 
 function ProductDetail() {
   const { productId } = useParams();
@@ -40,29 +41,34 @@ function ProductDetail() {
           <MyGallery images={images}/>
         </Col>
       </Row>
+
       <Row className="justify-content-center">
-       <Col md={5} className='d-flex'>
-         <Card className='mb-5 text-center shadow'border='light'>
-                <CardBody style={{ textAlign: 'start' }}>
+       <Col md={5}>
+         <Card className='mb-5 shadow'border='light'>
+                <CardBody style={{ textAlign: 'start', minHeight:'275px'}}>
                 {product.description}
                 </CardBody>
               </Card>
             </Col>
-            <Col md={5} className='d-flex'>
-              <Card className='mb-5 text-center shadow'border='light'>
-                <CardBody style={{ textAlign: 'start' }}>
+            <Col md={5} >
+              <Card className='mb-5 shadow'border='light'>
+                <CardBody style={{ textAlign: 'start', minHeight: '275px' }}>
                   {product.priceInformation}
                 </CardBody>
               </Card>     
             </Col>     
       </Row>
 
-      <Row className='mb-5'>
-        <Col>
-          <ContactForm />
+      <Row className='mb-5 justify-content-center'>
+      <Col md={5} >
+        <Calendar2/>
         </Col>
       </Row>
 
+      <Row className='mb-5 justify-content-center'>
+        <ContactForm />
+      </Row>
+      
     </Container>
   );
 }

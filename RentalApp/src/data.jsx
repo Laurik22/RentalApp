@@ -27,7 +27,7 @@ export const products = [
           <h4>Hinnasto</h4>
           <p></p>
           <p><li>Viikonloppu pe-su/3vrk: 230 € (sis. alv 25.5%)</li></p>
-          <p><li>Vuorokausi 140 € (sis. alv 25.5%)</li></p>
+          <p><li>Vuorokausi <strong>140 €</strong> (sis. alv 25.5%)</li></p>
           <p><li>Muut ajankohdat: sovitaan erikseen.</li></p>
           <p><li>Lisätietoja: Ota yhteyttä yhteydenotto lomakkeella tai soita  040-7143451.</li></p>
         </div>

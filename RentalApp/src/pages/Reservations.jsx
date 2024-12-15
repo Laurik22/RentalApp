@@ -1,12 +1,12 @@
 import React from 'react';
-import Calendar from '../components/Calendar';
+import Calendar2 from '../components/Calendar2';
+import { Container } from 'react-bootstrap';
+
 
 function Reservations() {
     
   return (
-    <div>
-        <Calendar/>
-    </div>
+       <Calendar2/>
   );
 }
 

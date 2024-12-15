@@ -1,7 +1,7 @@
 import ImageGallery from "react-image-gallery";
 import React, { useRef } from "react";
 import { Container } from "react-bootstrap";
-
+import '../App.css'
 function MyGallery({images}){
 
 const galleryRef = useRef(null);
@@ -10,8 +10,9 @@ const handleImageClick = () => {
   galleryRef.current.fullScreen();
 };
 
-  return(
-  <Container>
+  return( 
+  
+    <Container>
   <ImageGallery 
   showThumbnails={true}
   showFullscreenButton={true}
