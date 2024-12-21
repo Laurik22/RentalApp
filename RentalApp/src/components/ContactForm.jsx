@@ -29,9 +29,9 @@ function ContactForm() {
   
     return (
       <Container>
-      <Row className="justify-content-center align-items-center" >
-        <Col md={6} lg={6}>
-          <Form onSubmit={handleSubmit} className="p-4 border rounded shadow">
+      <Row className="justify-content-center align-items-center"  >
+        <Col md={8} >
+          <Form onSubmit={handleSubmit} className="p-4 border bg-white">
             <h2 className="mb-4">Ota yhteyttä</h2>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formName">
@@ -104,7 +104,7 @@ function ContactForm() {
           </Form>
         </Col>
       </Row>
-    </Container>
+      </Container>
     );
   }
   

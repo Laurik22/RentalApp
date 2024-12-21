@@ -4,20 +4,15 @@ import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import '../App.css'
-import { NavDropdown } from 'react-bootstrap';
 
 function Header(){
 return(
-  <Navbar className='shadow' expand="md" fixed="top"  variant='light' style={{backgroundColor:'#C4A484'}}>
+  <Navbar className='shadow' expand="md" fixed="top"  variant='light' style={{backgroundColor:'#000000'}}>
      <Container>
     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className='mx-auto' >
-
-        <NavDropdown  title='Vuokrattava kalusto' id="basic-nav-dropdown" className='me-4' >
-            <NavDropdown.Item as={Link} to="/products/saunaTrailer">Saunakärry</NavDropdown.Item >
-            <NavDropdown.Item as={Link} to="/products/perakarry">Peräkärry</NavDropdown.Item>
-        </NavDropdown> 
+      <Nav className='mx-auto' >            
+        <Nav.Link as={Link} to="/products/sauna" className='me-4'>Saunakärryn vuokraus</Nav.Link> 
         <Nav.Link as={Link} to="/reservations" className='me-4'>Varauskalenteri</Nav.Link> 
         <Nav.Link className='me-4'>Vuokrausehdot </Nav.Link> 
       </Nav>

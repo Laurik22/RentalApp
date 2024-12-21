@@ -1,56 +1,106 @@
+
 #root {
   margin: auto;
-  padding-top: 5em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-top: 3em;
   text-align: center;
+  width: 100%;
+background-color: #f3f3f3;
 }
-
 .navbar .navbar-nav .nav-link {
   font-weight: 600;
   font-size: 1.3em;
-  color: #000000;
+  color: #f9f9f9;
 }
 .navbar .navbar-nav .dropdown-item {
-  color: #000000; /* Tekstin väri */
+  color: #5b5a5a; /* Tekstin väri */
   font-weight: 600; /* Sama fonttipaino kuin muissa linkeissä */
   font-size: 1.2em; /* Varmistetaan yhtenäinen fonttikoko */
 }
-.navbar .navbar-nav .dropdown-menu {
-   /* Sama väri kuin Navbar */
-  border: none; /* Poistaa mahdolliset reunukset */
+
+.landingpage-content{
+background-color:rgb(255, 255, 255);
+margin-bottom: -2em;
 }
 
+hr.rounded{
+  width: 15em;
+  border-top: 3px solid #000000;
+  border-radius: 5px;
+}
+.divider{
+  margin-top: 8em;
+  justify-self: center;
+  margin-bottom: 5em;
+}
+.saunaInformation-text{
+  text-align: start;
+}
+
+
+.carousel-item img {
+  aspect-ratio: 4/3; /* Pakotettu kuvasuhde */
+  width: 100%; /* Kuvat täyttävät koko leveän tilan */
+  max-height: 500px; /* Asetetaan enimmäiskorkeus */
+  object-fit: cover; /* Leikkaa kuvan sopivaksi säilyttäen mittasuhteet */
+}
+.modal-fullscreen .carousel-item img {
+  max-height: 95vh;
+  object-fit: contain;
+  cursor: default;
+  
+}
+.modal-body{
+  background-color: #000000ec;
+}
+
+.carousel-item :hover{
+  cursor: pointer;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+   /* Tumma tausta */
+  color: rgb(231, 231, 231);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.9rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1051; /* Varmista, että painike on modaalin ja kuvan yläpuolella */
+}
+
+.close-button:hover {
+  color: #5b5a5a;
+}
+
+.section3{
+  text-align: start;
+  max-width: 30em;
+  
+}
+
+.custom-title{
+display: inline-block;
+text-align: left;
+font-size: 62px;
+}
+.custom-background{
+  background-color: #eaeaea; /* Haluttu taustaväri */
+  /* Varmista koko leveys */
+  width: 100%;
+  height: 800px;
+  
+}
 
 .navbar .navbar-nav .nav-link:hover {
-color: #000000;
-}
-.image-gallery {
-  width: 100%;
-  height: auto;
-}
-.image-gallery-image {
-  border-radius: 10px; 
-  overflow: hidden;  
+color: #b2b2b2;
 }
 
-.image-gallery-slide img {
-  border-radius: 10px; 
-  width: 100%;
-  height: 400px;
-  max-height: 80vh;
-  object-fit: cover;
-  overflow: hidden;
-  object-position: center center;
-  border-color: #000000;
-}
-
-.fullscreen .image-gallery-slide img {
-  height: 100%;
-  width: 100%;
-  padding-top: 5em;
-  background-color: #000000;
-}
 
 .react-calendar {
   max-width: 100%;
