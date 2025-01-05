@@ -30,8 +30,8 @@ function ContactForm() {
     return (
       <Container>
       <Row className="justify-content-center align-items-center"  >
-        <Col md={8} >
-          <Form onSubmit={handleSubmit} className="p-4 border bg-white">
+        <Col>
+          <Form onSubmit={handleSubmit} className="p-4 border bg-white" style={{maxWidth: '500px'}}>
             <h2 className="mb-4">Ota yhteyttä</h2>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formName">
@@ -60,7 +60,7 @@ function ContactForm() {
             </Row>
 
             <Row className="mb-3">
-              <Form.Group as={Col} md={6} controlId="formPhone">
+              <Form.Group as={Col} md={6} controlId="formPhone" className='mb-3'>
                 <Form.Control
                   type="tel"
                   name="phone"

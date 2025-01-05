@@ -52,7 +52,7 @@ function Calendar2() {
   }, []);
 
   return (
-    <div className='calendar-container' style={{}}>
+    <div className='calendar-container'>
     <Calendar
       tileClassName={({ date, view }) => {
         if (view === 'month') {

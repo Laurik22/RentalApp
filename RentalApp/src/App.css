@@ -1,10 +1,10 @@
 
 #root {
   margin: auto;
-  padding-top: 3em;
   text-align: center;
   width: 100%;
-background-color: #f3f3f3;
+  background-color: #f3f3f3;
+  padding-top: 3em;
 }
 .navbar .navbar-nav .nav-link {
   font-weight: 600;
@@ -32,10 +32,16 @@ hr.rounded{
   justify-self: center;
   margin-bottom: 5em;
 }
-.saunaInformation-text{
+.sauna-text-container{
   text-align: start;
 }
-
+.sauna-text-container p{
+  
+}
+.sauna-text-container p svg{
+  margin-right: 5px;
+}
+  
 
 .carousel-item img {
   aspect-ratio: 4/3; /* Pakotettu kuvasuhde */
@@ -78,10 +84,10 @@ hr.rounded{
   color: #5b5a5a;
 }
 
-.section3{
+.contact-section{
   text-align: start;
   max-width: 30em;
-  
+  color: rgb(0, 0, 0);
 }
 
 .custom-title{
@@ -197,6 +203,34 @@ color: #b2b2b2;
   background-color: red; 
   border-radius: 10%;
   color: rgb(255, 255, 255);
+}
+
+.rentalCond-text {
+  line-height: 1.6;
+  color: #333;
+  text-align: start;
+  padding-left: 1em;
+  padding-right: 1em;
+
+}
+.rentalCond-text h2 {
+padding-top: 2em;
+padding-bottom:2em;
+font-weight: bold;
+}
+
+.rentalCond-text h5 {
+  font-weight: bold;
+  
+}
+
+.rentalCond-text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.rentalCond-text ul li {
+  margin-bottom: 10px;
 }
 
    

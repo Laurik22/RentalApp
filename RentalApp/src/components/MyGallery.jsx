@@ -7,7 +7,7 @@ import Sivukuva from '../assets/Sivukuva.jpg';
 import Sisakuva from '../assets/Sisakuva.jpg';
 import Ulko from '../assets/ulko.jpg';
 
-function MyGallery({}){
+function MyGallery(){
 
   const [index, setIndex] = useState(0);
   const[showFullscreen, setShowFullscreen] = useState(false);
@@ -30,7 +30,7 @@ function MyGallery({}){
       <Carousel  activeIndex={index} onSelect={handleSelect} interval={null} slide={false}>
         <Carousel.Item>
           <img 
-            src={Sivukuva} 
+            src={Ulko} 
             alt="Sivukuva" 
             className='d-block w-100'
             onClick={handleImageClick} // Avaa fullscreen
@@ -38,7 +38,7 @@ function MyGallery({}){
         </Carousel.Item>
         <Carousel.Item>
           <img 
-            src={Ulko} 
+            src={Sisakuva} 
             alt="Ulko" 
             className='d-block w-100'
             onClick={handleImageClick} // Avaa fullscreen
@@ -46,7 +46,7 @@ function MyGallery({}){
         </Carousel.Item>
         <Carousel.Item>
           <img 
-            src={Sisakuva} 
+            src={Sivukuva} 
             alt="Sisakuva" 
             className='d-block w-100'
             onClick={handleImageClick} // Avaa fullscreen
@@ -74,13 +74,13 @@ function MyGallery({}){
           </button>
         <Carousel activeIndex={index} onSelect={handleSelect} interval={null} slide={false} >
           <Carousel.Item>
-            <img src={Sivukuva} alt="Sivukuva" className='d-block w-100' />
+            <img src={Ulko} alt="Sivukuva" className='d-block w-100' />
           </Carousel.Item>
           <Carousel.Item>
-            <img src={Ulko} alt="Ulko" className='d-block w-100' />
+            <img src={Sisakuva} alt="Ulko" className='d-block w-100' />
           </Carousel.Item>
           <Carousel.Item>
-            <img src={Sisakuva} alt="Sisakuva" className='d-block w-100' />
+            <img src={Sivukuva} alt="Sisakuva" className='d-block w-100' />
           </Carousel.Item>
         </Carousel>
       </Modal.Body>
