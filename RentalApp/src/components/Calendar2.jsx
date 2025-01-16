@@ -23,7 +23,7 @@ function Calendar2() {
                       orderBy: 'startTime',
                   }
               });
-              console.log(events)
+             
           
               const eventsByDay = {};
 
@@ -40,7 +40,7 @@ function Calendar2() {
                   };
                 }
               });
-              console.log(events)
+             
               setEvents(Object.values(eventsByDay));
               
           } catch (error) {
@@ -50,9 +50,12 @@ function Calendar2() {
 
       fetchEvents();
   }, []);
+  
+  const minDate = new Date(); 
+  const maxDate = new Date();
+  maxDate.setFullYear(maxDate.getFullYear() + 1); 
 
   return (
-    <div className='calendar-container'>
     <Calendar
       tileClassName={({ date, view }) => {
         if (view === 'month') {
@@ -63,9 +66,13 @@ function Calendar2() {
         }
         return null;
       }}
+    
       showNeighboringMonth={false}
+      next2Label={null}
+      prev2Label={null}
+      maxDate={maxDate}
+      minDate={minDate}
     />
-    </div>
   );
 };
 export default Calendar2;

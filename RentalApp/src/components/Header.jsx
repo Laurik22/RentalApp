@@ -13,7 +13,6 @@ return(
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className='mx-auto' >            
         <Nav.Link as={Link} to="/products/sauna" className='me-4'>Saunakärryn vuokraus</Nav.Link> 
-        <Nav.Link as={Link} to="/reservations" className='me-4'>Varauskalenteri</Nav.Link> 
         <Nav.Link  as={Link} to= "/rentalconditions" className='me-4'>Vuokrausehdot </Nav.Link> 
       </Nav>
     </Navbar.Collapse>

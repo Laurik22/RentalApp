@@ -18,7 +18,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/products/sauna" />} />
           <Route path="/products/:productId" element={<Sauna />} />
-          <Route path="/reservations" element={<Reservations />} />
           <Route path="/rentalconditions" element={<RentalConditions/>} />
         </Routes>
       </main>

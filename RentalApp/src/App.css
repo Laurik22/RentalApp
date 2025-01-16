@@ -3,7 +3,6 @@
   margin: auto;
   text-align: center;
   width: 100%;
-  background-color: #f3f3f3;
   padding-top: 3em;
 }
 .navbar .navbar-nav .nav-link {
@@ -56,6 +55,10 @@ hr.rounded{
   
 }
 .modal-body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #000000ec;
 }
 
@@ -66,24 +69,8 @@ hr.rounded{
   position: absolute;
   top: 10px;
   right: 10px;
-   /* Tumma tausta */
-  color: rgb(231, 231, 231);
-  border: none;
-  border-radius: 50%;
-  font-size: 1.9rem;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 1051; /* Varmista, että painike on modaalin ja kuvan yläpuolella */
+  z-index: 1051;
 }
-
-.close-button:hover {
-  color: #5b5a5a;
-}
-
 .contact-section{
   text-align: start;
   max-width: 30em;
@@ -107,12 +94,12 @@ font-size: 62px;
 color: #b2b2b2;
 }
 
-
 .react-calendar {
   max-width: 100%;
   background: rgb(255, 255, 255);
   font-family: 'Arial', 'Helvetica', sans-serif;
   line-height: 1.125em;
+  
   
 }
 .react-calendar--doubleView {
@@ -144,8 +131,11 @@ color: #b2b2b2;
   outline: none;
 }
 
-.react-calendar button:enabled:hover {
-  cursor: pointer;
+.react-calendar__navigation button:enabled:hover{
+  background-color: #cfcfcf;
+}
+.react-calendar__navigation__label {
+  pointer-events: none;
 }
 
 .react-calendar__navigation {
@@ -153,19 +143,28 @@ color: #b2b2b2;
   display: flex;
   height: 44px;
   margin-bottom: 1em;
+  font-size: large
 }
 
 .react-calendar__navigation button {
   color: #000000;
   min-width: 44px;
   background: none;
+  border: 1px solid #bfbfc5 ;
+}
+.react-calendar__navigation button.react-calendar__navigation__prev-button {
+  background-color: #bfbfc5; 
+}
+
+.react-calendar__navigation button.react-calendar__navigation__next-button {
+  background-color: rgb(191, 191, 197); 
 }
 
 .react-calendar__month-view__weekdays {
   text-align: center;
   text-transform: uppercase;
   font: inherit;
-  font-size: 0.75em;
+  font-size: 0.9em;
   font-weight: bold;
 }
 
@@ -187,22 +186,25 @@ color: #b2b2b2;
 .react-calendar__decade-view .react-calendar__tile,
 .react-calendar__century-view .react-calendar__tile {
   padding: 2em 0.5em;
+  background-color: white;
 }
 
 .react-calendar__tile {
+  cursor: default !important;
   color: black;
-  max-width: 100%;
+  max-width: 100%; 
   padding: 10px 6.6667px;
-  background: rgb(255, 255, 255);
+  background: rgb(192, 255, 153);
   text-align: center;
   font: inherit;
-  font-size: 0.833em;
+  font-size:bold;
   border: 2px solid rgb(0, 0, 0);
 }
+
 .event-day-red {
-  background-color: red; 
-  border-radius: 10%;
-  color: rgb(255, 255, 255);
+  background-color: rgb(253, 123, 123); 
+  
+
 }
 
 .rentalCond-text {
@@ -232,5 +234,6 @@ font-weight: bold;
 .rentalCond-text ul li {
   margin-bottom: 10px;
 }
+  
 
    
