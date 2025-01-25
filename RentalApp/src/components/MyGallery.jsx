@@ -13,7 +13,6 @@ function MyGallery() {
   const [index, setIndex] = useState(0);
   const [showFullscreen, setShowFullscreen] = useState(false);
 
-
   const images = [
     { src: talviulko, caption: "Ulko" },
     { src: talviulko2, caption: "Ulko" },
