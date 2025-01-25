@@ -4,8 +4,9 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Sauna from './pages/sauna';
-import Reservations from './pages/Reservations';
 import RentalConditions from './pages/RentalConditions';
+import './custom.scss';
+import Instructions from './pages/instructions';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Navigate to="/products/sauna" />} />
           <Route path="/products/:productId" element={<Sauna />} />
           <Route path="/rentalconditions" element={<RentalConditions/>} />
+          <Route path="/instructions" element={<Instructions/>} />
         </Routes>
       </main>
       <Footer />

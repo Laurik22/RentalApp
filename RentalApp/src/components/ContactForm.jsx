@@ -97,7 +97,7 @@ function ContactForm() {
             </Row>
 
             <div className="d-grid">
-              <Button type="submit" variant='secondary'size='lg' >
+              <Button type="submit" size='lg' variant='secondary' >
                 Lähetä
               </Button>
             </div>

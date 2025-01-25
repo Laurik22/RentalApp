@@ -5,15 +5,6 @@ function Footer(){
         <footer>
             <Container fluid>
             <Row className='bg-dark text-white'>
-                <Col>
-                col1
-                </Col>
-                <Col>
-                col2
-                </Col>
-                <Col>
-                col3
-                </Col>
             </Row>
             </Container>
         </footer>

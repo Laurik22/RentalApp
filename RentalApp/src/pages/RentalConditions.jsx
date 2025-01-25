@@ -1,9 +1,10 @@
-import { Container } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 
 function RentalConditions() {
   return (
-    <Container className="rentalCond-text mt-5 ">
-        
+    <Container fluid className="rentalCond-text mb-5">
+      <Row>
+      <Col  className="p-4">
     <h2>VUOKRAUSEHDOT</h2>
       <h5 className="mb-3">Vuokra-aika</h5>
       <p>
@@ -78,6 +79,8 @@ function RentalConditions() {
         Jos vuokralainen laiminlyö edellä mainittujen ilmoitusten tekemisen, hän vastaa vuokranantajille siitä
         syntyneestä vahingosta.
       </p>
+      </Col>
+      </Row>
     </Container>
   );
 }
