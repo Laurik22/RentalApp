@@ -17,7 +17,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<Sauna/>} />
+          <Route path="/" element={<Navigate to="/sauna" />} /> 
           <Route path="/sauna" element={<Sauna />} />
           <Route path="/rentalconditions" element={<RentalConditions/>} />
           <Route path="/instructions" element={<Instructions/>} />
