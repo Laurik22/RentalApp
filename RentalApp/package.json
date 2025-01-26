@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://laurik22.github.io/RentalApp",
+  "homepage": "https://Laurik22.github.io/RentalApp",
 
   "scripts": {
     "dev": "vite",
