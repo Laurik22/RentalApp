@@ -1,6 +1,3 @@
-import Sivukuva from './assets/Sivukuva.jpg';
-import Sisakuva from './assets/Sisakuva.jpg';
-import ulko from './assets/ulko.jpg';
 import './App.css'
 import {CheckCircleFill} from 'react-bootstrap-icons';
 
@@ -54,13 +51,6 @@ export const saunaInformation =
       tai soittamalla <strong>040-7143451.</strong>
     </p>
   </div>
-
-
     ),
-    images: [
-      Sivukuva,
-      Sisakuva,
-      ulko
-     ]
     };
 

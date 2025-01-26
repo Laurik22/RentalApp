@@ -2,23 +2,15 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import {saunaInformation} from '../data';
 import ContactForm from '../components/ContactForm';
-import { Button, Container, Row, Col, CardBody, Image} from 'react-bootstrap';
-import { useEffect, useState, useRef } from 'react';
+import { Button, Container, Row, Col} from 'react-bootstrap';
+import {useState, useRef } from 'react';
 import MyGallery from "../components/MyGallery";
 import '../App.css'
 import talviulko from '../assets/talviulko.jpg';
-import Ulko from '../assets/ulko.jpg';
 import { GeoAltFill, ArrowRight} from 'react-bootstrap-icons';
 import Calendar from '../components/Calendar';
 
-
-
-
 function sauna() {
-  const { productId } = useParams();
-  const [product, setProduct] = useState(null);
-  const [images, setImages] = useState([]);
-
   const reservationRef = useRef(null);
 
   const handleScroll = () => {

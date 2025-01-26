@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,8 +17,8 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<Navigate to="/products/sauna" />} />
-          <Route path="/products/:productId" element={<Sauna />} />
+          <Route path="/" element={<Sauna/>} />
+          <Route path="/sauna" element={<Sauna />} />
           <Route path="/rentalconditions" element={<RentalConditions/>} />
           <Route path="/instructions" element={<Instructions/>} />
         </Routes>
