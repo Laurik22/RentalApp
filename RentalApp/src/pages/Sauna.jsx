@@ -17,7 +17,7 @@ function sauna() {
     const yOffset = -80; // Skrollaa 80 pikseliä vähemmän (navigointipalkin korkeus)
     const yPosition =
       reservationRef.current.getBoundingClientRect().top +
-      window.pageYOffset +
+      window.scrollY + // Use scrollY instead of pageYOffset
       yOffset;
   
     window.scrollTo({ top: yPosition, behavior: "smooth" });
@@ -26,18 +26,9 @@ function sauna() {
   
  
   return (
-    <Container fluid >
+    <Container fluid className=''>
       <Row>
-        <Col  className='background-image'
-        style={{ 
-          backgroundImage: `url(${talviulko})`,
-          backgroundSize: 'cover',
-          height: '70vh',
-          display: 'flex',
-          alignItems: 'end',
-          justifyContent: 'center',
-        }}
-        >
+        <Col  className='background-image-landing'>
           <Col lg={8} md={10} className='landingpage-content p-4'>
           <div >
             <h1><span className='text-primary'>SAUNA</span> PERÄKÄRRYN VUOKRAUS</h1>
@@ -56,24 +47,26 @@ function sauna() {
           </Col>
         </Col>
       </Row>
-      
+
+      <Col className='divider'></Col>
       <Container className='mt-5'>
-  
-      <Col className='divider'>
-      
-      </Col>
         
-      <Row className="mb-5">
-      <Col md={7} className='mb-5'>
+      <Row className="mb-5 gx-5">
+      <Col className='mb-5'>
          <MyGallery></MyGallery>
         </Col>
-       <Col md={4} className=''>
+       <Col lg={5}>
+       <div>
         {saunaInformation.description}
-        {saunaInformation.priceInformation}                
+        </div>
+
+        <div>
+        {saunaInformation.priceInformation}  
+        </div>              
           </Col>
       </Row>
 
-      <Row >
+      <Row className='' >
       <Col md={6} className='mb-5'>
       <div ref={reservationRef} className='contact-section'>
         {saunaInformation.contactText}

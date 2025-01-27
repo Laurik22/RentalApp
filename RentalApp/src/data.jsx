@@ -47,7 +47,7 @@ export const saunaInformation =
       erityistilaisuuksiin kuin pidemmille lomillekin.  
     </p>
       <p>
-      Tarkista vapaat ajat kätevästi <strong>varauskalenteristamme</strong> ja ota yhteyttä <strong>yhteydenottolomakkeella </strong>
+      Tarkista vapaat ajat kätevästi varauskalenteristamme ja ota yhteyttä <strong>yhteydenottolomakkeella </strong>
       tai soittamalla <strong>040-7143451.</strong>
     </p>
   </div>

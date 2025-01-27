@@ -6,6 +6,15 @@
   padding-top: 3em;
 
 }
+.background-image-landing {
+  background-image: url('./assets/talviulko.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 70vh;
+}
 
 .navbar .navbar-nav .nav-link {
   font-weight: 600;
@@ -25,12 +34,11 @@ hr.rounded{
   border-radius: 5px;
 }
 .divider{
-  margin-top: 8em;
-  justify-self: center;
-  margin-bottom: 5em;
+  margin-top: 9em;
 }
 .sauna-text-container{
   text-align: start;
+  margin-bottom: 3em;
 }
 .sauna-text-container p svg{
   margin-right: 5px;

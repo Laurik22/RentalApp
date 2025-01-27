@@ -2,84 +2,81 @@ import { Container, Col, Row } from "react-bootstrap";
 
 function RentalConditions() {
   return (
-    <Container fluid className="rentalCond-text mb-5">
+    <Container className="rentalCond-text mb-5">
       <Row>
-      <Col  className="p-4">
-    <h2>VUOKRAUSEHDOT</h2>
-      <h5 className="mb-3">Vuokra-aika</h5>
-      <p>
-        Vuokra-aika alkaa vuokrauksen kohteena olevan hinattavan laitteen luovutushetkellä ja kestää siihen
-        saakka, kunnes vuokralainen on palauttanut sen vuokranantajille. Palautus vuokranantajille sopimuksen
-        mukaisen vuokra-ajan päättyessä. Saunakärry on palautettava sovittuun paikkaan vuokrasopimuksessa
-        sovitun vuokra-ajan päättyessä. Palautuksen myöhästymisestä on ilmoitettava vuokranantajille viipymättä.
-        Myöhästymisestä peritään maksu 10€/jokaiselta alkavalta tunnilta. Sopimuksen mukainen vuokra-aika
-        päättyy, kun hinattava laite on palautettu vuokranantajille. Vuokranantajilla ei ole velvollisuutta maksaa
-        hyvitystä, jos vuokralainen palauttaa paljukärryn ennen sovitun vuokra-ajan päättymistä. Vuokra
-        suoritetaan etukäteen varatulta vuokrausajalta, vuokrasopimuksen allekirjoittanut henkilö on vastuussa
-        vuokran, vahinkojen ja ilkivallan maksamisesta.
-      </p>
+        <Col className="p-4">
+          <h2>Vuokrausehdot</h2>
 
-      <h5 className="mb-3">Vuokralaisen velvollisuudet ja vastuut</h5>
-      <p>
-        Vuokrattua hinattavaa laitetta ei saa viedä Suomen rajojen ulkopuolelle.
-        Vuokralaisella ei ole oikeutta vuokrata laitetta kolmansille osapuolille.
-      </p>
-      <p>
-        Vuokralainen on velvollinen hoitamaan hinattavaa laitetta huolellisesti ja sopimuksessa olevien ohjeiden
-        mukaan niin, että ne ovat palautettaessa samassa kunnossa kuin luovutushetkellä normaalia kulumista
-        lukuun ottamatta.
-      </p>
-      <ul>
-        <li>
-          Vuokralaisen on tarkistettava vuokrattava hinattava laite luovutushetkellä ja kirjattava yhdessä
-          vuokranantajien kanssa ylös mahdolliset puutteet tai viat tähän sopimukseen.
-        </li>
-        <li>
-          Mikäli puutteita tai vikoja ei ole kirjattu, on vuokralainen vastuussa näistä vioista sikäli, kuin ne ovat
-          olleet vuokralaisen havaittavissa tarkastus hetkellä.
-        </li>
-        <li>
-          Mikäli hinattavaan laitteeseen tulee tekninen tai muu vika, on tästä ilmoitettava viipymättä
-          vuokranantajille.
-        </li>
-      </ul>
-      <h5 className="mt-4">Korvaukset ja maksut</h5>
-      <ul>
-        <li>
-          Vuokralainen on velvollinen korvaamaan kaikki hinattavalle laitteelle vuokra-aikana tapahtuneet
-          vahingot, mitä vuokranantajien ottama vakuutus ei korvaa.
-        </li>
-        <li>
-          Vuokralainen on myös velvollinen maksamaan vakuutuksen omavastuuosuuden 200€ tai 500€ (törmäys),
-          mikäli vakuutusta joudutaan käyttämään.
-        </li>
-        <li>Korvaamaan hinattavasta laitteesta vuokra-aikana kadonneet osat.</li>
-        <li>
-          Suorittamaan vahinkojen aiheuttamalta seisonta-ajalta kohtuullisen vuorokausimaksun, kuitenkin
-          enintään 30 vuorokaudelta. Seisonta-aika alkaa kulua vahinkopäivästä.
-        </li>
-        <li>
-          Maksamaan kaikkine kustannuksineen vuokra-aikana hinattavan laitteen käyttämisestä aiheutuvat
-          leiriytymis-, pysäköinti- ja pysäköintivirhemaksut, ylikuorma-, sakko-, rike- ja muut maksut.
-        </li>
-      </ul>
+          <h5 className="mb-3">Vuokra-aika</h5>
+          <p>
+            Vuokra-aika alkaa laitteen luovutushetkellä ja päättyy, kun laite on
+            palautettu vuokranantajalle sopimuksen mukaisesti. Palautuspaikka
+            ja -aika määritellään vuokrasopimuksessa. Myöhästyneestä
+            palautuksesta on ilmoitettava vuokranantajalle heti. Myöhästymisestä
+            peritään 10 €/alkava tunti. Jos laite palautetaan ennen sovittua
+            vuokra-ajan päättymistä, hyvitystä ei makseta.
+          </p>
+          <p>
+            Vuokra maksetaan etukäteen, ja vuokrasopimuksen allekirjoittaja on
+            vastuussa vuokrasta, vahingoista ja ilkivallasta.
+          </p>
 
-      <h5 className="mb-3">Vuokralaisen toimenpiteet vika-, vahinko- ja varkaustapauksissa</h5>
-      <p>
-        Vuokralaisen on välittömästi ilmoitettava vuokranantajille hinattavassa laitteessa ilmenneestä viasta,
-        vahingosta tai varkaudesta. Varkaudesta on tehtävä viipymättä ilmoitus poliisille.
-      </p>
-      <p>
-        Liikennevahingon sattuessa vuokralainen on aina velvollinen tekemään viipymättä vahinkoilmoituksen
-        vuokranantajille. Kaikissa liikennevahingoissa joissa on mukana toinen osapuoli, on vuokralaisen
-        ilmoitettava asiasta poliisille, sekä toimitettava vuokranantajalle poliisin antama todistus tehdystä
-        ilmoituksesta.
-      </p>
-      <p>
-        Jos vuokralainen laiminlyö edellä mainittujen ilmoitusten tekemisen, hän vastaa vuokranantajille siitä
-        syntyneestä vahingosta.
-      </p>
-      </Col>
+          <h5 className="mb-3">Vuokralaisen velvollisuudet ja vastuut</h5>
+          <p>
+            Vuokrattua laitetta ei saa viedä Suomen rajojen ulkopuolelle, eikä
+            sitä saa vuokrata edelleen kolmansille osapuolille. Laite on
+            palautettava samassa kunnossa kuin luovutettaessa, lukuun ottamatta
+            normaalia kulumista.
+          </p>
+          <ul>
+            <li>
+              Tarkista laite luovutushetkellä ja kirjaa mahdolliset viat tai
+              puutteet yhdessä vuokranantajan kanssa.
+            </li>
+            <li>
+              Jos vikoja ei ole kirjattu, vastuu havaittavista vioista on
+              vuokralaisella.
+            </li>
+            <li>
+              Ilmoita viipymättä vuokranantajalle laitteen teknisistä tai muista
+              vioista.
+            </li>
+          </ul>
+
+          <h5 className="mt-4">Korvaukset ja maksut</h5>
+          <ul>
+            <li>
+              Vuokralainen korvaa laitteen vuokra-aikana tapahtuneet vahingot,
+              joita vuokranantajan vakuutus ei kata.
+            </li>
+            <li>
+              Vakuutuksen omavastuuosuudet: 200 € (perusvahingot) tai 500 €
+              (törmäykset).
+            </li>
+            <li>Laitteesta kadonneiden osien korvaaminen kuuluu vuokralaiselle.</li>
+            <li>
+              Vuokralainen maksaa vahingoista johtuvan seisonta-ajan maksun
+              (enintään 30 päivältä).
+            </li>
+            <li>
+              Kaikki laitteen käyttöön liittyvät maksut, kuten
+              leiriytymis-, pysäköinti- ja sakkomaksut, ovat vuokralaisen
+              vastuulla.
+            </li>
+          </ul>
+
+          <h5 className="mb-3">Toimenpiteet vika-, vahinko- ja varkaustapauksissa</h5>
+          <p>
+            Ilmoita viipymättä vuokranantajalle, jos laitteessa ilmenee vika,
+            vahinko tai varkaus. Varkaustapauksessa tee heti ilmoitus poliisille.
+          </p>
+          <p>
+            Liikennevahingon sattuessa tee vahinkoilmoitus ja tarvittaessa
+            poliisille ilmoitus. Toimita poliisin antama todistus
+            vuokranantajalle. Ilmoitusten laiminlyönti johtaa vahingon
+            korvausvelvollisuuteen.
+          </p>
+        </Col>
       </Row>
     </Container>
   );
