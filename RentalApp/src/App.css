@@ -40,6 +40,22 @@ hr.rounded{
   text-align: start;
   margin-bottom: 3em;
 }
+.sauna-list {
+  list-style: none; /* Poistetaan oletusarvoinen listatyyli */
+  padding: 0;
+  margin: 0;
+}
+.sauna-list li {
+  display: flex;
+  align-items: center; /* Kohdistaa ikonit ja tekstin keskelle pystysuunnassa */
+  gap: 10px; /* Välit ikonien ja tekstin välillä */
+  margin-bottom: 8px; /* Välit listakohteiden välillä */
+}
+.sauna-list li svg {
+  flex-shrink: 0; /* Estää ikonia skaalautumasta tekstin kanssa */
+}
+
+
 .sauna-text-container p svg{
   margin-right: 5px;
 }
