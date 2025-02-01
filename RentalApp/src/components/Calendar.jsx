@@ -4,12 +4,14 @@ import '../App.css'
 import axios from 'axios';
 
 function ResCalendar() {
-  const [events, setEvents] = useState([]);
+  const [eventDates, setEventDates] = useState(new Set());
 
   useEffect(() => {
       const fetchEvents = async () => {
+        
           const calendarId = 'f1205b7657fe9a4a469c544171e513b42f803bb74da50b545925112c6a34b9eb@group.calendar.google.com';
           const apiKey = 'AIzaSyAOL9uEo5DxYCZ7jWlXnhG9Cu45fh88xpo';
+
           const timeMin = new Date(new Date().getFullYear(), 0, 1).toISOString(); 
           const timeMax = new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString();
 
@@ -23,49 +25,28 @@ function ResCalendar() {
                       orderBy: 'startTime',
                   }
               });
-             
-              const eventsByDay = {};
-
-              response.data.items.forEach(event => {
-                
-                const eventDate = new Date(event.start.dateTime || event.start.date).toDateString();
-              
-                if (!eventsByDay[eventDate]) {
-                  eventsByDay[eventDate] = {
-                    id: event.id,
-                    title: event.summary,
-                    start: new Date(event.start.dateTime || event.start.date),
-                    end: new Date(event.end.dateTime || event.end.date),
-                  };
-                }
-              });
-             
-              setEvents(Object.values(eventsByDay));
-              
-          } catch (error) {
+              const dates = new Set(
+                response.data.items.map(event => new Date(event.start.dateTime || event.start.date).toDateString())
+              );
+      
+              setEventDates(dates);
+            } catch (error) {
               console.error('Virhe tapahtumien hakemisessa:', error);
-          }
+            }
       };
 
       fetchEvents();
   }, []);
   
-  const minDate = new Date(); 
+  const minDate = new Date();
   const maxDate = new Date();
   maxDate.setFullYear(maxDate.getFullYear() + 1); 
 
   return (
     <Calendar
-      tileClassName={({ date, view }) => {
-        if (view === 'month') {
-          const eventDates = events.map(event => event.start.toDateString());
-          if (eventDates.includes(date.toDateString())) {
-            return 'event-day-red';
-          }
-        }
-        return null;
-      }}
-    
+    tileClassName={({ date, view }) =>
+      view === 'month' && eventDates.has(date.toDateString()) ? 'event-day-red' : null
+    }
       showNeighboringMonth={false}
       next2Label={null}
       prev2Label={null}
