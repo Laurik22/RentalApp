@@ -14,10 +14,10 @@ function sauna() {
   const reservationRef = useRef(null);
 
   const handleScroll = () => {
-    const yOffset = -80; // Skrollaa 80 pikseliä vähemmän (navigointipalkin korkeus)
+    const yOffset = -80; 
     const yPosition =
       reservationRef.current.getBoundingClientRect().top +
-      window.scrollY + // Use scrollY instead of pageYOffset
+      window.scrollY + 
       yOffset;
   
     window.scrollTo({ top: yPosition, behavior: "smooth" });
