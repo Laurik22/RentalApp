@@ -6,10 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Sauna from './pages/sauna';
 import RentalConditions from './pages/RentalConditions';
 import './custom.scss';
-import Instructions from './pages/instructions';
+
 
 function App() {
-
+  
   return (
     <Router>
     <header>
@@ -20,7 +20,6 @@ function App() {
           <Route path="/" element={<Navigate to="/sauna" />} /> 
           <Route path="/sauna" element={<Sauna />} />
           <Route path="/rentalconditions" element={<RentalConditions/>} />
-          <Route path="/instructions" element={<Instructions/>} />
         </Routes>
       </main>
       <Footer />

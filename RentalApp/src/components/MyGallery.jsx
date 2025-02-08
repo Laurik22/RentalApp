@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { CloseButton, Container} from "react-bootstrap";
 import Modal from 'react-bootstrap/Modal';
 import '../App.css';
-import talviulko from '../assets/talviulko.jpg';
+import saunataustakuva from '../assets/saunataustakuva.webp';
 import talviulko2 from '../assets/talviulko2.jpg';
 import talviulko3 from '../assets/talviulko3.jpg';
 import talviulko4 from '../assets/talviulko4.jpg';
@@ -14,7 +14,7 @@ function MyGallery() {
   const [showFullscreen, setShowFullscreen] = useState(false);
 
   const images = [
-    { src: talviulko, caption: "Ulko" },
+    { src: saunataustakuva, caption: "Ulko" },
     { src: talviulko2, caption: "Ulko" },
     { src: talviulko3, caption: "Ulko" },
     { src: talviulko4, caption: "Ulko" },

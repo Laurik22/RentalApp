@@ -31,11 +31,12 @@ function ContactForm() {
       <Container>
       <Row className="justify-content-center align-items-center"  >
         <Col>
-          <Form onSubmit={handleSubmit} className="p-4 border bg-white" style={{maxWidth: '500px'}}>
+          <Form onSubmit={handleSubmit} className="p-4" style={{maxWidth: '500px'}}>
             <h2 className="mb-4">Ota yhteyttä</h2>
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formName">
                 <Form.Control
+                  className='border border-dark'
                   type="text"
                   name="name"
                   placeholder="Nimi *"
@@ -49,6 +50,7 @@ function ContactForm() {
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formEmail">
                 <Form.Control
+                className='border border-dark'
                   type="email"
                   name="email"
                   placeholder="Sähköposti *"
@@ -62,6 +64,7 @@ function ContactForm() {
             <Row className="mb-3">
               <Form.Group as={Col} md={6} controlId="formPhone" className='mb-3'>
                 <Form.Control
+                className='border border-dark'
                   type="tel"
                   name="phone"
                   placeholder="Puhelinnumero"
@@ -72,6 +75,7 @@ function ContactForm() {
 
               <Form.Group as={Col} md={6} controlId="formSubject">
                 <Form.Control
+                className='border border-dark'
                   type="text"
                   name="subject"
                   placeholder="Aihe *"
@@ -85,6 +89,7 @@ function ContactForm() {
             <Row className="mb-3">
               <Form.Group as={Col} controlId="formMessage">
                 <Form.Control
+                className='border border-dark'
                   as="textarea"
                   rows={5}
                   name="message"

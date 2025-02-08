@@ -1,12 +1,12 @@
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 
-// Määritä omat värit
+
 $theme-colors: (
     "primary": #5a3c1f,
     "secondary": #d4a373,
-    "dark": #000000
+    "dark": 	#304146
 );
 
-// Tuo loput Bootstrapista
+
 @import "bootstrap/scss/bootstrap";

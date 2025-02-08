@@ -15,7 +15,6 @@ return(
       <Nav className='mx-auto' >            
         <Nav.Link as={Link}  to="/sauna" className='me-4'>Saunakärryn vuokraus</Nav.Link> 
         <Nav.Link  as={Link} to= "/rentalconditions" className='me-4'>Vuokrausehdot </Nav.Link> 
-        <Nav.Link  as={Link} to= "/instructions" className='me-4'> Käyttöohjeet</Nav.Link> 
       </Nav>
     </Navbar.Collapse>
     </Container>

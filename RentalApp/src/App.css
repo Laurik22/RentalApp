@@ -4,21 +4,22 @@
   text-align: center;
   width: 100%;
   padding-top: 3em;
-
+  font-family:'Arial', sans-serif;
 }
 .background-image-landing {
-  background-image: url('./assets/talviulko.jpg');
+  background-image: url('./assets/saunataustakuva.webp');
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 70vh;
+  height: 50vh;
 }
 
 .navbar .navbar-nav .nav-link {
   font-weight: 600;
   font-size: 1.3em;
+  font-family: 'Arial' ,'sans-serif';
   color: #ffffff;
 }
 
@@ -26,6 +27,9 @@
 margin-bottom: -3em;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 background-color: rgb(245, 245, 245,0.98) ;
+}
+.landingpage-content button{
+  max-width: 500px;
 }
 
 hr.rounded{
